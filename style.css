@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --width1: 400px;
+  --primary-PaleBlue: hsl(225, 100%, 94%);
+  --primary-BrightBlue: hsl(245, 75%, 52%);
+  --neutralPaleBlue: hsl(225, 100%, 98%);
+  --neutralDesaturatedBlue: hsl(224, 23%, 55%);
+  --neutralDarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--neutralPaleBlue);
+}
+
+.card {
+  width: var(--width1);
+  margin: 120px auto;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card img {
+  width: var(--width1);
+  border-radius: 10px 10px 0 0;
+}
+
+.text-area {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.text-area h2 {
+  font-weight: 900;
+}
+
+.pricing {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(239, 242, 253);
+}
+
+.pricing img {
+  width: 40px;
+  height: 40px;
+}
+
+.pricing-left {
+  display: flex;
+}
+
+.pricing-left img {
+  margin-right: 10px;
+}
+
+.pricing-left .text h5 {
+  font-weight: 900;
+}
+
+.pricing-right {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-right a {
+  text-decoration: none;
+  color: var(--neutralDarkBlue);
+  font-weight: 700;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--neutralPaleBlue);
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #6e64ff;
+  color: white;
+}
